@@ -2,6 +2,7 @@
 //------------------------------------------
 #include <algorithm>
 #include <bitset>
+#include <cstring>
 #include <complex>
 #include <deque>
 #include <exception>
@@ -71,15 +72,14 @@ template<class T> inline T sqr(T x) {return (x*x);}
 
 // array
 //------------------------------------------
-#define CLR(ary) memset((ary), 0 ,sizeof(ary))
+#define ZERO(ary) memset((ary),0,sizeof(ary))
+#define FILL(ary,v) memset((ary),v,sizeof(ary))
 
 // container
 //------------------------------------------
 #define ALL(obj) (obj).begin(),(obj).end()
 #define RALL(a) (a).rbegin(), (a).rend()
 #define SIZE(obj) ((int)(obj).size())
-#define ZERO(ary) memset(ary,0,sizeof(ary))
-#define FILL(ary,v) memset(ary,v,sizeof(ary))
 #define SORT(obj) sort((obj).begin(),(obj).end())
 #define PB push_back
 #define MP make_pair
@@ -102,7 +102,8 @@ const double PI = acos(-1.0);
 
 // global
 //------------------------------------------
-int i,j,k;
+int i,j,k,l,m,n;
+
 
 
 void mymain()
